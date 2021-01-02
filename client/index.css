@@ -1,0 +1,104 @@
+@font-face { font-family: 'Circular'; src: url('../../FPO/fonts/CircularStd-Medium.otf');}
+@font-face { font-family: 'Circular'; font-weight: 700; src: url('../../FPO/fonts/CircularStd-Bold.otf');}
+@font-face { font-family: 'Circular'; font-weight: 800; src: url('../../FPO/fonts/CircularStd-Book.otf');}
+@font-face { font-family: 'Modeno'; src: url('font.ttf');}
+body{
+  margin: 0;
+  font-family: "Circular";
+  background: #4e54c8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dfdce3, #f2eff4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dfdce3, #f2eff4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.game{
+  text-align: center;
+  margin-top: 50px;
+}
+h2{
+  font-family: "Modeno";
+  font-size: 40px;
+}
+.col{
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-color: white;
+  border-radius: 12px;
+  transition: .4s all;
+}
+
+.col:hover{
+  cursor: pointer;
+  background-color: #ddd;
+}
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 2;
+  cursor: pointer;
+  display: none;
+  transition: .2s all;
+}
+
+#container{
+  background: white;
+  width: 55%;
+  max-width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 200px;
+
+}
+#winner{
+  background: #4ABDAC;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+}
+#winner2{
+  background: #4ABDAC;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  transition: .3s all;
+}
+#exit{
+  font-size: 30px;
+  position: absolute;
+  color: #666;
+  top: 0;
+  right: 1%;
+}
+button{
+  width: 280px;
+  margin-top: 20px;
+  height: 60px;
+  border: 0;
+  background: #f7b733;
+  font-family: "Circular";
+  color: black;
+  font-size: 14px;
+  line-height: 60px;
+  border-radius: 5px;
+  transition: .3s all;
+
+}
+button:hover{
+  cursor: pointer;
+  background: #f2a810;
+}
+#turnmsg{
+  font-size: 24px;
+}
